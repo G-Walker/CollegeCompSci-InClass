@@ -42,8 +42,27 @@ public class AtmUI {
 			
 			this.setAmount(-40);
 		}
-
 		
+	}
+	
+	
+	
+	public void doCompleteTransaction(boolean completed) {
+		
+		//Method to verify transaction was completed
+		
+		/*if (compleated){
+			this.display("Thank You for Choosing CCS6 Bank, Have a Nice Day!");
+			}
+			
+		if (!completed){
+			this.display("Uh-oh, Something Went Wrong on Our End. Transaction Cancelled,"
+			+ " Would you Like to Make Another Transaction?");
+			TODO Enter Y/N Options. Y = Return to Main Menu, N = Exit
+		}
+			*/
+		
+	
 	}
 
 	private void display(String message) {
