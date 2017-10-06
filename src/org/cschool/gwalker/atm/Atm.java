@@ -12,6 +12,7 @@ public class Atm {
 	
 	Scanner input = new Scanner(System.in);
 	
+	
 	public boolean doAuthenticate() {
 		/*
 		 * TODO Finish This
@@ -60,7 +61,7 @@ public class Atm {
 			
 			this.balance -= this.requestedAmount;
 
-			this.display(" $" + this.requestedAmount + " Deposited."
+			this.display(" $" + this.requestedAmount + " Withdrawn."
 					+ "\n New Balance: $" + this.balance);
 
 		}
