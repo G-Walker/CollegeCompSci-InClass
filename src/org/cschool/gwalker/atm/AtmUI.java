@@ -20,49 +20,45 @@ public class AtmUI {
 
 		this.choice = input.nextInt();
 
-		if (this.choice == 1){
+		if (this.choice == 1) {
 			this.display("Please Enter the Amount You Would Like to Deposit: ");
 			this.setAmount(input.nextDouble());
 		}
-		
+
 		if (this.choice == 2) {
-			
+
 			this.display("Please Enter the Amount You Would Like to Withdraw: ");
-			this.setAmount(- + input.nextDouble());
+			this.setAmount(-+input.nextDouble());
 		}
-		
+
 		if (this.choice == 3) {
-			
-			//Get and Return Current Balance from Account
+
+			// Get and Return Current Balance from Account
 		}
-		
+
 		if (this.choice == 4) {
-			
+
 			this.choice = 2;
-			
+
 			this.setAmount(-40);
 		}
-		
+
 	}
-	
-	
-	
+
 	public void doCompleteTransaction(boolean completed) {
-		
-		//Method to verify transaction was completed
-		
-		/*if (compleated){
-			this.display("Thank You for Choosing CCS6 Bank, Have a Nice Day!");
-			}
-			
-		if (!completed){
-			this.display("Uh-oh, Something Went Wrong on Our End. Transaction Cancelled,"
-			+ " Would you Like to Make Another Transaction?");
-			TODO Enter Y/N Options. Y = Return to Main Menu, N = Exit
-		}
-			*/
-		
-	
+
+		// Method to verify transaction was completed
+
+		/*
+		 * if (compleated){
+		 * this.display("Thank You for Choosing CCS6 Bank, Have a Nice Day!"); }
+		 * 
+		 * if (!completed){
+		 * this.display("Uh-oh, Something Went Wrong on Our End. Transaction Cancelled,"
+		 * + " Would you Like to Make Another Transaction?"); TODO Enter Y/N Options. Y
+		 * = Return to Main Menu, N = Exit }
+		 */
+
 	}
 
 	private void display(String message) {
@@ -84,13 +80,12 @@ public class AtmUI {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 		AtmUI ui = new AtmUI();
 		ui.doOptionDisplay();
-		
-		
+
 		System.out.println(ui.getChoice());
 		System.out.println(ui.getAmount());
 	}
