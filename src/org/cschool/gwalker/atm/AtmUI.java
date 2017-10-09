@@ -23,25 +23,26 @@ public class AtmUI {
 		if (this.choice == 1) {
 			this.display("Please Enter the Amount You Would Like to Deposit: ");
 			this.setAmount(input.nextDouble());
-		}
-
-		if (this.choice == 2) {
+		} else if (this.choice == 2) {
 
 			this.display("Please Enter the Amount You Would Like to Withdraw: ");
 			this.setAmount(-+input.nextDouble());
-		}
-
-		if (this.choice == 3) {
+		} else if (this.choice == 3) {
 
 			// Get and Return Current Balance from Account
-		}
-
-		if (this.choice == 4) {
+		} else if (this.choice == 4) {
 
 			this.choice = 2;
 
 			this.setAmount(-40);
+		} 
+			
+		else {
+			this.display("Error: Invalid Input Key, Please Choose a Valid Input Key.");
+			System.out.println();
+			doOptionDisplay();
 		}
+		
 
 	}
 
